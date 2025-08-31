@@ -1,0 +1,49 @@
+.app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #8c8cb4;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: #0f0202;
+}
+
+.emoji {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+.message {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #1d0505;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0077ff;
+  border: none;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fcc;
+}
