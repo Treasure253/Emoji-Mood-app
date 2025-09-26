@@ -81,7 +81,7 @@ export default function Mood() {
 
   return (
     <div className="container">
-      <h1>🎭 Emoji Mood App</h1>
+      <h1>Emoji Mood App</h1>
 
       {/* Buttons */}
       <div className="buttons">
