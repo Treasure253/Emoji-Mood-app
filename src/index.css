@@ -1,49 +1,91 @@
-.app {
+/* General container */
+.container {
   text-align: center;
   font-family: Arial, sans-serif;
-  background-color: #8c8cb4;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 20px;
+  color: #976e6e;
 }
 
-h1 {
-  font-size: 2.4rem;
-  margin-bottom: 20px;
-  color: #0f0202;
+/* Buttons row */
+.buttons {
+  margin: 20px 0;
+}
+
+/* Mood buttons */
+.button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+/* Mood-specific colors */
+.button.Happy { background-color: #fdd835; border-color: #fbc02d; }
+.button.Sad { background-color: #42a5f5; border-color: #1e88e5; }
+.button.Excited { background-color: #ab47bc; border-color: #8e24aa; }
+.button.Angry { background-color: #ef5350; border-color: #e53935; }
+.button.Relaxed { background-color: #66bb6a; border-color: #43a047; }
+.button.Tired { background-color: rgb(141, 110, 99); border-color: #6d4c41; }
+.button.Love { background-color: rgb(236, 64, 122); border-color: #d81b60; }
+.button.Confused { background-color: #ffa726; border-color: #fb8c00; }
+
+.button:hover {
+  opacity: 0.85;
+}
+
+/* Input form */
+.form {
+  margin-top: 15px;
+}
+
+.input {
+  padding: 10px;
+  font-size: 16px;
+  width: 220px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+}
+
+.submitBtn {
+  margin-left: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+  background-color: #45a049;
+}
+
+/* Output display */
+.output {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  min-width: 320px;
+  text-align: center;
+  transition: background 0.6s ease;
 }
 
 .emoji {
-  font-size: 4rem;
-  margin-bottom: 15px;
+  font-size: 65px;
+  margin: 15px 0;
 }
 
 .message {
-  font-size: 1.1rem;
-  margin-bottom: 25px;
-  color: #1d0505;
-}
-
-.button-group {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  background-color: #0077ff;
-  border: none;
+  font-size: 20px;
+  font-style: italic;
   color: white;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-button:hover {
-  background-color: #005fcc;
+  margin-top: 12px;
 }
